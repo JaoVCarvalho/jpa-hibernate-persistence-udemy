@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>br.com.udemy.javaEE</groupId>
+  <artifactId>jpa-hibernate-persistence-udemy</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>jpa-hibernate-persistence-udemy</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <!--
+     Define a versão do código fonte Java com a qual o Maven deve compilar o projeto.
+     Nese caso, 21 significa que o projeto usa Java 21 como a versão de linguagem.
+     -->
+    <maven.compiler.source>21</maven.compiler.source>
+    <!--
+     Define a versão de destino do bytecode gerado pelo compilador Maven.
+     No exemplo, o valor 21 significa que o bytecode resultante será compatível com a JVM Java 21.
+    -->
+    <maven.compiler.target>21</maven.compiler.target>
+    <!--
+    Define o conjunto de caracteres (encoding) usado no projeto.
+    No exemplo, o valor UTF-8 significa que o Maven usará UTF-8 como o encoding padrão para compilar os arquivos de código-fonte.
+    -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+
+    <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+    <dependency>
+      <groupId>com.mysql</groupId>
+      <artifactId>mysql-connector-j</artifactId>
+      <version>8.0.33</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+    <dependency>
+      <groupId>org.hibernate.orm</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>6.6.3.Final</version>
+    </dependency>
+
+  </dependencies>
+</project>
